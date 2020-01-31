@@ -18,5 +18,8 @@ public class GameLogic : MonoBehaviour
         
     }
 
-
+    public void unlockEmoji(int id)
+    {
+        emojiList[id].GetComponent<Emoji>().setUnlocked(true);
+    }
 }

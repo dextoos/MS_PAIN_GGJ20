@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Emoji.cs" />
     <Compile Include="Assets\Scripts\Fondo.cs" />
     <Compile Include="Assets\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Scripts\Problema.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/GGJ/github/MS_PAIN_GGJ20/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

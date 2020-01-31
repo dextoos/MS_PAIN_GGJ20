@@ -33,7 +33,7 @@ public class Emoji : MonoBehaviour
         {
             this.GetComponent<Renderer>().enabled = false;
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && unlocked)
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Collider2D hitCollider = Physics2D.OverlapPoint(mousePos);
@@ -65,6 +65,7 @@ public class Emoji : MonoBehaviour
     public void setUnlocked(bool b)
     {
         unlocked = b;
+        setVisible(true);
     }
 
     public void setVisible(bool b)
