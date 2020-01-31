@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Emoji : MonoBehaviour
 {
+    public int id;
     public float dt;
     public bool unlocked;
     public bool visible;
+    public bool clicked;
+    public Vector2 originalPos;
+    public Vector2 offset;
 
     // Start is called before the first frame update
     void Start()
     {
+        clicked = false;
         dt = 0.0f;
         unlocked = true;
         visible = true;
@@ -36,8 +41,24 @@ public class Emoji : MonoBehaviour
 
             if (hitCollider != null && hitCollider.gameObject.name == this.name)
             {
-                setVisible(!visible);
+                clicked = true;
+                originalPos = gameObject.transform.position;
+                offset = mousePos - originalPos;
             }
+
+            
+        }
+
+        if (clicked)
+        {
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, 0.0f) - new Vector3(offset.x, offset.y, 0.0f);
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            clicked = false;
+
         }
     }
 
