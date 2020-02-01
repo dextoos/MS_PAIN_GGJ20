@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class GameLogic : MonoBehaviour
 {
+<<<<<<< HEAD
     public int problems;
 
     public GameObject[] emojiList;
     // Start is called before the first frame update
     void Start()
     {
+=======
+    public GameObject[] emojiList;
+    public int heldEmojiId;
+    // Start is called before the first frame update
+    void Start()
+    {
+        heldEmojiId = -1;
+>>>>>>> origin/bisby
     }
 
     // Update is called once per frame
@@ -17,6 +26,7 @@ public class GameLogic : MonoBehaviour
     {
         
     }
+<<<<<<< HEAD
 
     public void unlockEmoji(int id)
     {
@@ -36,4 +46,6 @@ public class GameLogic : MonoBehaviour
     {
         Debug.Log("Game won");
     }
+=======
+>>>>>>> origin/bisby
 }
