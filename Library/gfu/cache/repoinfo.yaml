@@ -13,26 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-02-01T12:13:08.914+01:00
-  initializedAtString: 2020-02-01T12:13:08.914+01:00
+  lastUpdatedAtString: 2020-02-01T13:36:23.596+01:00
+  initializedAtString: 2020-02-01T13:36:23.596+01:00
   currentGitRemote:
     name: origin
-    url: https://github.com/dextoos/MS_PAIN_GGJ20
+    url: https://github.com/dextoos/MS_PAIN_GGJ20.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   currentGitBranch:
-    name: bisby
-    tracking: origin/bisby
+    name: master
+    tracking: origin/master
   currentConfigBranch:
-    name: bisby
+    name: master
     remote:
       name: origin
-      url: https://github.com/dextoos/MS_PAIN_GGJ20
-    trackingBranch: bisby
+      url: https://github.com/dextoos/MS_PAIN_GGJ20.git
+    trackingBranch: master
   currentConfigRemote:
     name: origin
-    url: https://github.com/dextoos/MS_PAIN_GGJ20
+    url: https://github.com/dextoos/MS_PAIN_GGJ20.git
   currentHead: 
