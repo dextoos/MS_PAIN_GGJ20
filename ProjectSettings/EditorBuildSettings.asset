@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MsPain.unity
+    guid: 8d3dcba45378a4c4d82b40db99710317
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 014ce62f4708da24aa0f8ab9cd8ccdaa
+  - enabled: 1
+    path: Assets/Scenes/EmojiTon.unity
+    guid: 0729642279bf63841b85e4465e33c2bf
   m_configObjects: {}
